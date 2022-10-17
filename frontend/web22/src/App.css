@@ -1,0 +1,394 @@
+/* Especificaciones generales */
+body {
+  font-family: 'Bahnschrift';
+  background-color: rgba(6, 92, 230, 0.842);
+  color: #000;
+  background-image: url(https://images.vexels.com/media/users/3/155301/isolated/lists/6a91c0d6c8ba37a9fd115e1776300319-pregunta-de-doodle-de-signo-de-interrogacion-3d.png);
+  background-repeat: round;
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+color: inherit;
+text-decoration: none;
+}
+
+a.hyper{
+color: rgba(6, 92, 230, 0.842);
+cursor: pointer;
+}
+
+.right{
+float: right;
+}
+
+.left{
+float: left;
+}
+
+.center{
+display: flex;
+justify-content: center;
+gap: 30px;
+
+}
+
+.img{
+width: 300px;
+}
+
+.icon{
+width: 20px;
+padding-left: 3%;
+}
+
+.mapa{
+width: 820px;
+position: absolute;
+top: 10%;
+}
+
+.logo{
+width: 300px;
+}
+
+.portada{
+width: 500px;
+}
+
+.green{
+background-color: aquamarine;
+}
+
+.red{
+background-color: red;
+}
+
+@media screen and (max-width: 600px) {
+ul li.right, 
+ul li {float: none;}
+}
+/* Estilo de la barra de navegación */
+
+ul {
+list-style-type: none;
+width: 100% !important;
+margin: 0;
+padding: 0;
+background-color: #000;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
+overflow: hidden;
+}
+
+li {
+float: left;
+}
+
+li a {
+color: #fff;
+display: block;
+text-align: center;
+text-decoration-color: #000;
+padding: 14px 16px;
+text-decoration-thickness: 20%;
+min-width: 100px;
+}
+
+li.dropdown {
+display: block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #000;
+min-width: 100px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+li a, .dropbtn {
+display: block;
+color: white;
+padding: 14px 16px;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+background-color: rgba(6, 92, 230, 0.842);
+text-decoration-color: #fff;
+}
+
+/* Titulos */
+
+h1{
+margin: 1%;
+padding: 1%;
+background-color: white;
+border: solid #000;
+text-align: center;
+height: fit-content;
+}
+
+h2{
+text-align: center;
+margin: 1%;
+padding: 1%;
+}
+
+h3{
+background-color: white;
+margin: 1%;
+padding: 1%;
+border: solid #000;
+text-align: center;
+}
+
+h3.cita{
+background-color: white;
+margin: 1%;
+padding: 1%;
+border: solid #000;
+text-align: center;
+height: max-content;
+}
+
+h3.inventario{
+background-color: white;
+margin: 1%;
+padding: 1%;
+border: solid #000;
+text-align: center;
+height: max-content;
+}
+
+/* Contenedores  */
+
+.contenedor1{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap; 
+  margin: 0;
+}
+
+.contenedor2{
+background-color: rgba(255, 255, 255, 0.65);
+border: solid #000;
+margin: 1%;
+
+display: grid;
+justify-content: center;
+width: 420px;
+}
+
+.contenedor3{
+width: 50%;
+margin: 1%;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.contenedor4{
+display: grid;
+grid-template-columns: 19.33% 39.33% 19.33%;
+justify-content: space-between;
+margin: 1%;
+}
+
+.contenedor5{
+background-color: rgba(255, 255, 255, 0.65);
+width: 99%;
+border: solid #000;
+display: grid;
+row-gap: 0px;
+position: static;
+}
+
+.contenedorfondo{
+background-color: rgba(255, 255, 255, 0.65);
+border: solid #000;
+margin: 1%;
+transition: 0.5s;
+}
+
+.contenedorfondo:hover{
+background-color: rgba(6, 92, 230, 0.3);
+color: white;
+border: solid #000;
+margin: 1%;
+}
+
+/* Botones */
+
+button{
+color:#fff;
+font-family: 'Bahnschrift';
+font-size: xx-large;
+background-color: #000;
+border-radius: 12px;
+border: solid rgba(6, 92, 230, 0.842);
+transition-duration: 0.5s;
+width: 200px;
+height: 55px;
+cursor: pointer;
+}
+
+button.small{
+width: fit-content;
+height: fit-content;
+font-size: medium;
+margin-top: 5%;
+display: block;
+}
+
+button.blanco{
+width: fit-content;
+height: fit-content;
+margin-top: 5%;
+font-size: medium;
+background-color: rgba(6, 92, 230, 0.842);
+color: white;
+border: solid black;
+}
+
+button.rojo{
+width: fit-content;
+height: fit-content;
+margin-top: 5%;
+font-size: medium;
+background-color: white;
+color: red;
+border: solid red;
+}
+
+button.rojo:hover {
+background-color: red;
+color: white;
+border: solid white;
+}
+
+button.blanco:hover {
+background-color: white;
+color: black;
+border: solid rgba(6, 92, 230, 0.842);
+}
+
+button:active:hover{
+background-color: skyblue;
+color: black;
+}
+
+button:disabled{
+background-color: gray;
+color: white;
+}
+
+button:hover{
+background-color: white;
+color: black;
+border: solid rgba(6, 92, 230, 0.842);
+box-shadow: 0 12px 16px 0 rgba(6, 92, 230, 0.24), 0 17px 50px 0 rgba(6, 92, 230, 0.19)
+}
+
+button:disabled:hover{
+background-color: silver;
+color: white;
+cursor: not-allowed;
+}
+
+/* Inputs */
+
+input{
+font-family: 'Bahnschrift';
+background-color: rgba(6, 92, 230, 0.842);
+border-radius: 12px;
+border: solid #000;
+text-align: center;
+display: flex;
+transition-duration: 0.5s;
+padding: 1%;
+margin: 1%;
+align-items: center;
+}
+
+::placeholder{
+color: #000;
+}
+
+label{
+text-align: center;
+}
+
+/* Checkbox extraída de internet, pero adaptada por el grupo */
+/* https://alvarotrigo.com/blog/css-checkbox-styles/ */
+
+.checkbox-rect input[type="checkbox"]{
+display: none;
+}
+.checkbox-rect input[type="checkbox"] + label{
+display: block;
+position: relative;
+padding-left: 30px;
+margin-bottom: 10px;
+font: 14px/20px 'Bahnschrift';
+cursor: pointer;
+}
+.checkbox-rect input[type="checkbox"]:hover + label:hover{
+color: rgba(6, 92, 230, 0.842);
+}
+.checkbox-rect input[type="checkbox"]:hover + label:before{
+background: rgba(6, 92, 230, 0.842);
+box-shadow: inset 0px 0px 0px 2px #f7f2f2;
+}
+.checkbox-rect input[type="checkbox"] + label:last-child{
+margin-bottom: 0;
+}
+.checkbox-rect input[type="checkbox"] + label:before{
+content: "";
+display: block;
+width: 1.4em;
+height: 1.4em;
+border: 1px solid rgba(6, 92, 230, 0.842);
+border-radius: 0.2em;
+position: absolute;
+left: 10px;
+top: 0;
+-webkit-transition: all 0.5s, background 0.5s ease-in-out;
+transition: all 0.5s, background 0.5s ease-in-out;
+background: #f3f3f3;
+}
+
+.checkbox-rect input[type="checkbox"]:checked + label:before{
+width: 1.3em;
+height: 1.3em;
+border-radius: 0.2em;
+border: 2px solid #fff;
+-webkit-transform: rotate(360deg);
+transform: rotate(360deg);
+background: rgba(6, 92, 230, 0.842);
+box-shadow: 0 0 0 1px rgba(6, 92, 230, 0.842);
+}
+
+/* Hasta Aquí */
+
+input:hover{
+background-color: whitesmoke;
+color: rgba(6, 92, 230, 0.842);
+box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19)
+}
+
+input:disabled{
+background-color: gray;
+cursor: not-allowed;
+}
+
+input:disabled:hover{
+background-color: ghostwhite;
+cursor: not-allowed;
+}
