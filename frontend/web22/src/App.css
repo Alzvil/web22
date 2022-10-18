@@ -392,3 +392,34 @@ input:disabled:hover{
 background-color: ghostwhite;
 cursor: not-allowed;
 }
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 25px;
+  text-align: center;
+  font-size: 15px;
+  cursor: pointer;
+  color: white;
+  background-color: rgba(6, 92, 230, 0.842);
+}
+
+.containerTab {
+  padding: 20px;
+  color: black;
+  background-color: rgba(6, 92, 230, 0.3);
+  display:none
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}

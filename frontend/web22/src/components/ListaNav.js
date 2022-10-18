@@ -1,7 +1,9 @@
 function ListaNav(props) {
     return (
         <li>
-            <a class=props.class ></a>
+            <a className={props.class} href={props.link}>
+                {props.text}
+            </a>
         </li>
     );
 };
